@@ -4,6 +4,9 @@
 #include "AdminMenu.h"
 #include "UserMenu.h"
 
+#include <iostream>
+using namespace std;
+
 int main()
 {
     FuelStation fs;
