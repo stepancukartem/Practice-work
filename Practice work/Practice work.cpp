@@ -3,9 +3,6 @@
 #include "AdminMenu.h"
 #include "UserMenu.h"
 
-#include <iostream>
-using namespace std;
-
 int main()
 {
     FuelStation fs;
@@ -13,16 +10,11 @@ int main()
 
     int mode;
     do {
-        cout << "\n--- АЗС ---\n";
-        cout << "1. Адмін режим\n";
-        cout << "2. Користувач\n";
-        cout << "0. Вихід\n> ";
+        cout << "\n1. Адмін\n2. Користувач\n0. Вихід\n";
         cin >> mode;
 
-        if (mode == 1)
-            AdminMenu(fs, cm);
-        else if (mode == 2)
-            UserMenu(fs, cm);
+        if (mode == 1) AdminMenu::Show(fs, cm);
+        if (mode == 2) UserMenu::Show(fs, cm);
 
     } while (mode != 0);
 
