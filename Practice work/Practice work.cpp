@@ -1,6 +1,7 @@
 ﻿#include "FuelStation.h"
 #include "CoffeeMachine.h"
 #include "AdminMenu.h"
+#include "AdminMenu.h"
 #include "UserMenu.h"
 
 int main()
@@ -9,6 +10,7 @@ int main()
     CoffeeMachine cm;
 
     int mode;
+
     do {
         cout << "\n1. Адмін\n2. Користувач\n0. Вихід\n";
         cin >> mode;
